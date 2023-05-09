@@ -1,0 +1,14 @@
+Muy bien, no era un entero. Cantidad de errores seguidos: 1
+Muy bien, no era un entero. Cantidad de errores seguidos: 2
+Muy bien, no era un entero. Cantidad de errores seguidos: 3
+Muy bien, no era un entero. Cantidad de errores seguidos: 4
+Muy bien, no era un entero. Cantidad de errores seguidos: 5
+Muy bien, no era un entero. Cantidad de errores seguidos: 6
+Muy bien, no era un entero. Cantidad de errores seguidos: 7
+Muy bien, no era un entero. Cantidad de errores seguidos: 8
+Muy bien, no era un entero. Cantidad de errores seguidos: 9
+Muy bien, no era un entero. Cantidad de errores seguidos: 10
+Muy bien, no era un entero. Cantidad de errores seguidos: 11
+Muy bien, no era un entero. Cantidad de errores seguidos: 12
+Muy bien, no era un entero. Cantidad de errores seguidos: 13
+Muy bien, no era un entero. Cantidad de errores seguidos: 14

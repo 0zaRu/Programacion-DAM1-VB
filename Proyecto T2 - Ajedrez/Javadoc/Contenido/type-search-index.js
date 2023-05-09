@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Ajedrez"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Config"},{"p":"<Unnamed>","l":"MiObjectOutputStream"},{"p":"<Unnamed>","l":"Pieza"},{"p":"<Unnamed>","l":"Tablero"}];updateSearchResults();
