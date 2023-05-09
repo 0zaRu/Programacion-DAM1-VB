@@ -31,16 +31,19 @@ public class Insert {
 			//Se establece la conexion a la bd con usuario y contraseña con Connection
 			con = DriverManager.getConnection(url, usr, pwd);
 			
-			//Creamos la sentencia y la metemos en la PreparedStatement pstm
+			//Creamos la sentencia y la metemos en la PreparedStatement pstm, parametrizada
 			String sql = "INSERT INTO Asignaturas (Nombre, Horas)";
 			sql += "values(?, ?)";
 			pstm = con.prepareStatement(sql);
 			
+			//Añadimos a la sentencia los valores (desparametrización)
 			pstm.setString(1, "Bases de Datos");
 			pstm.setInt(2, 6);
 			
+			//almacenamos elr esultado
 			int resultado = pstm.executeUpdate();
 			
+			//Hacemos las salidas pertinentes
 			if(resultado == 1)
 				System.out.println("1 fila insertada con éxito");
 			else
