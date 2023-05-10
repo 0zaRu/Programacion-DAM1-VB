@@ -31,12 +31,14 @@ public class Gestor {
 				
 				//Si sale true se ingresa, false saca
 				if(rand.nextBoolean()) {
-					CAComunidad.ingresar(ingreso = rand.nextFloat(95f)+5f);
+					//CAComunidad.ingresar(ingreso = rand.nextFloat(95f)+5f);
+					CAComunidad.ingresar(ingreso = rand.nextInt(95)+5);
 					System.out.println("\nVecino: "+ colaBanco.poll().toString()+" ha ingresado: "+ingreso);
 					ingresoTotal += ingreso;
 					cantIngresos++;
 				}else {
-					CAComunidad.reintegro(reintegro = rand.nextFloat(95f)+5f);	
+					//CAComunidad.reintegro(reintegro = rand.nextFloat(95f)+5f);
+					CAComunidad.reintegro(reintegro = rand.nextInt(95)+5);	
 					System.out.println("\nVecino:"+ colaBanco.poll().toString()+" ha sacado: "+reintegro);
 					reintegroTotal += reintegro;
 					cantReintegros++;
