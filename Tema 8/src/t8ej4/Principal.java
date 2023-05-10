@@ -17,9 +17,12 @@ public class Principal {
 		
 		do {
 			tipo = genAleat.nextInt(2);
-			num_origen = Long.toString(genAleat.nextLong(999999999-600000000)+6000000000l);
-			num_destino = Long.toString(genAleat.nextLong(999999999-600000000)+6000000000l);
-			duracion = genAleat.nextLong(2399)+1;
+			//num_origen = Long.toString(genAleat.nextLong(999999999-600000000)+6000000000l);
+			num_origen = Long.toString(genAleat.nextInt(999999999-600000000)+6000000000l);
+			//num_destino = Long.toString(genAleat.nextLong(999999999-600000000)+6000000000l);
+			num_destino = Long.toString(genAleat.nextInt(999999999-600000000)+6000000000l);
+			//duracion = genAleat.nextLong(2399)+1;
+			duracion = genAleat.nextInt(2399)+1;
 			
 			if(tipo == 0) //Llamada local
 			{
