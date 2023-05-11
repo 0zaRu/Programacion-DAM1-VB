@@ -33,8 +33,8 @@ public class Proce_Almacenado {
 			
 			//Creamos la sentencia y la metemos en la PreparedStatement pstm, parametrizada
 			pstm = con.prepareCall("( call PA_insertaAsignatura(?, ?) )");
-			pstm.setString("nomAsig", "Bases de Datos");
-			pstm.setInt("horasAsig", 6);
+			//pstm.setString("nomAsig", "Bases de Datos");
+			//pstm.setInt("horasAsig", 6);
 			pstm.execute();
 			
 			System.out.println("Fin del procedimientoo");
