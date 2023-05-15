@@ -1,7 +1,6 @@
 package ejercicio_1;
 
 import java.awt.*;
-
 import javax.swing.*;
 
 public class Ventana extends JFrame{
