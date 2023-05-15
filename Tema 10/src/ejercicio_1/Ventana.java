@@ -1,7 +1,6 @@
 package ejercicio_1;
 
 import java.awt.*;
-import java.awt.event.MouseListener;
 
 import javax.swing.*;
 
@@ -18,8 +17,9 @@ public class Ventana extends JFrame{
 		setLayout(new FlowLayout());
 		
 		//crea una etiqueta a la que se le añade una imagen
-		JLabel etiqueta = new JLabel (new ImageIcon("movil.jpeg"));
-		
+		JLabel etiqueta = new JLabel (new ImageIcon("navi.gif"));
+		add(etiqueta);
+
 		//crea un boton con un texto y cambia el color de los elementos del frente a rojo
 		JButton boton = new JButton("Pulsar");
 		boton.setForeground(Color.RED);
