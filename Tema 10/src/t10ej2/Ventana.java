@@ -37,6 +37,7 @@ public class Ventana extends JFrame{
         });
 
         //Establecemos los parámetros de la ventana
+        setTitle("Prueba de eventos en Java");
         setSize(300, 100);
         setLocation(900, 500);
         getContentPane().setBackground(Color.black);
