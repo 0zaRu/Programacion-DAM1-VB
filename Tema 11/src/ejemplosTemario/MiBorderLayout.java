@@ -32,7 +32,7 @@ public class MiBorderLayout extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		MiBorderLayout mBL = new MiBorderLayout();
-		mBL.setVisible(true);
+		MiBorderLayout mGL = new MiBorderLayout();
+		mGL.setVisible(true);
 	}
 }
