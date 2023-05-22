@@ -1,4 +1,4 @@
-package ejemplosTemario;
+package layouts;
 
 import java.awt.FlowLayout;
 import java.awt.event.WindowAdapter;
