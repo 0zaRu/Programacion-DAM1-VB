@@ -6,11 +6,11 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class PswFiledPrueba extends JFrame{
+public class JPasswordFieldEJ extends JFrame{
     static final long serialVersionUID = 1;
     char[] psw1;
 
-    PswFiledPrueba(){
+    JPasswordFieldEJ(){
 
         try {
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -47,7 +47,7 @@ public class PswFiledPrueba extends JFrame{
     }
 
     public static void main(String[] args){
-        PswFiledPrueba pf = new PswFiledPrueba();
+        JPasswordFieldEJ pf = new JPasswordFieldEJ();
         pf.setVisible(true);
     }
 }

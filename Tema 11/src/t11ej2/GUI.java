@@ -17,11 +17,14 @@ public class GUI extends JFrame{
 			e.printStackTrace();
 		}
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
 		setLayout(new BorderLayout());
 		//falta centrar y separar botones
 		add(new JPanel(), BorderLayout.NORTH);
 		
-		
+		archivo.setAlignmentY(TOP_ALIGNMENT);
+		archivo.setAlignmentX(LEFT_ALIGNMENT);
 		add(archivo, BorderLayout.CENTER);
 		
 		Botonera botonera = new Botonera();

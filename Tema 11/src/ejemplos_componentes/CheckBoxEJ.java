@@ -6,11 +6,11 @@ import java.awt.event.ItemListener;
 
 import javax.swing.*;
 
-public class RadioButtonPrueba extends JFrame{
+public class CheckBoxEJ extends JFrame{
     static final long serialVersionUID = 1;
     char[] psw1;
 
-    RadioButtonPrueba(){
+    CheckBoxEJ(){
 
         try {
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -20,28 +20,30 @@ public class RadioButtonPrueba extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
-        ButtonGroup grupo = new ButtonGroup();
-        
-        JRadioButton carne = new JRadioButton("Carne");
-        JRadioButton pescado = new JRadioButton("Carne");
+        //para qué era el container necesario?
+        JCheckBox carne = new JCheckBox("Carne");
+        JCheckBox pescado = new JCheckBox("Carne");
         JLabel select = new JLabel("Usted prefiere: Nada");
 
         ItemListener escuchacheck = new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                if(carne.isSelected())
+                if(carne.isSelected() && pescado.isSelected())
+                    select.setText("Usted prefiere: Carne y pescado");
+                
+                else if(carne.isSelected() && !pescado.isSelected())
                     select.setText("Usted prefiere: Carne");
 
-                else
+                else if(!carne.isSelected() && pescado.isSelected())
                     select.setText("Usted prefiere: Pescado");
 
+                else
+                    select.setText("Usted prefiere: Nada");
             }
         };
         carne.addItemListener(escuchacheck);
         pescado.addItemListener(escuchacheck);
 
-        grupo.add(carne);
-        grupo.add(pescado);
         add(carne);
         add(pescado);
         add(select);
@@ -52,7 +54,7 @@ public class RadioButtonPrueba extends JFrame{
     }
 
     public static void main(String[] args){
-        RadioButtonPrueba rb = new RadioButtonPrueba();
-        rb.setVisible(true);
+        CheckBoxEJ cb = new CheckBoxEJ();
+        cb.setVisible(true);
     }
 }

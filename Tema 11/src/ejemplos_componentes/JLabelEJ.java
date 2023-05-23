@@ -4,11 +4,11 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import javax.swing.*;
 
-public class MiJLabel extends JFrame {
+public class JLabelEJ extends JFrame {
 	
 	static final long serialVersionUID = 1;
 	
-	MiJLabel() {
+	JLabelEJ() {
 
 		try {
 			UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -40,7 +40,7 @@ public class MiJLabel extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		MiJLabel mJL = new MiJLabel();
+		JLabelEJ mJL = new JLabelEJ();
 		mJL.setVisible(true);
 	}
 }

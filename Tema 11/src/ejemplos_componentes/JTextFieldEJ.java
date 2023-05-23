@@ -9,10 +9,10 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.*;
 
-public class TextFieldTitle extends JFrame{
+public class JTextFieldEJ extends JFrame{
     static final long serialVersionUID = 1;
 
-    TextFieldTitle(){
+    JTextFieldEJ(){
 
         try {
             UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -54,7 +54,7 @@ public class TextFieldTitle extends JFrame{
     }
 
     public static void main(String[] args){
-        TextFieldTitle TFT = new TextFieldTitle();
+        JTextFieldEJ TFT = new JTextFieldEJ();
         TFT.setVisible(true);
     }
 }

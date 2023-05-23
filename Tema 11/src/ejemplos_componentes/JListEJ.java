@@ -7,13 +7,13 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-public class JListPrueba extends JFrame implements ListSelectionListener{
+public class JListEJ extends JFrame implements ListSelectionListener{
 	static final long serialVersionUID = 1;
 	JList<String> paises = new JList<String>(new String[]{"España", "Francia", "Italia", "Alemania", "Países bajos"});
 	JScrollPane despl = new JScrollPane(paises);
 	JLabel selecciones = new JLabel("No se ha seleccionado nada");
 	
-	JListPrueba(){
+	JListEJ(){
 		
 		paises.setVisibleRowCount(3);
 		paises.addListSelectionListener(this);
@@ -52,7 +52,7 @@ public class JListPrueba extends JFrame implements ListSelectionListener{
 	
 	
 	public static void main(String[] args) {
-		JListPrueba jl = new JListPrueba();
+		JListEJ jl = new JListEJ();
 		jl.setVisible(true);
 	}
 }

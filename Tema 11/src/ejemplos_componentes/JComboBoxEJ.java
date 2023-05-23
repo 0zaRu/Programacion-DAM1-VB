@@ -7,12 +7,12 @@ import java.awt.event.ItemListener;
 
 import javax.swing.*;
 
-public class MiJComboBox extends JFrame implements ItemListener{
+public class JComboBoxEJ extends JFrame implements ItemListener{
 	static final long serialVersionUID = 1;
 	JComboBox<String> paises = new JComboBox<String>(new String[]{"España", "Francia", "Italia", "Alemania", "Países bajos"});
 	JLabel selecciones = new JLabel("No se ha seleccionado nada");
 	
-	MiJComboBox(){
+	JComboBoxEJ(){
 		
 		paises.setMaximumRowCount(3);
 		paises.addItemListener(this);
@@ -44,7 +44,7 @@ public class MiJComboBox extends JFrame implements ItemListener{
 	}
 	
 	public static void main(String[] args) {
-		MiJComboBox jcb = new MiJComboBox();
+		JComboBoxEJ jcb = new JComboBoxEJ();
 		jcb.setVisible(true);
 	}
 }
