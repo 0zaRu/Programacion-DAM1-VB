@@ -1,6 +1,5 @@
 package t11ej2;
 
-import java.awt.GridBagLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -12,7 +11,7 @@ public class Botonera extends JPanel {
 
 	Botonera(){
 		//Establecemos la botonera a grid para poder añadir centrado todo
-		setLayout(new GridBagLayout());
+		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
 
 		//Rellenamos el funcionamiento del botón de cargar archivo
 		JButton cargar = new JButton("Cargar ...");
@@ -39,24 +38,24 @@ public class Botonera extends JPanel {
 		//Debería añadir un windowlistener para el redimensionamiento y tamaño mínimo
 		
 		//Añadimos todo a su respectivo lugar
-		int espaciado = (this.getWidth()-cargar.getWidth()-guardar.getWidth()-guardar_como.getWidth()-cerrar.getWidth()-limpiar.getWidth())/6;
+		int espaciado = 12;
+
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 		
-		add(Box.createHorizontalStrut(espaciado));
+		add(cargar, CENTER_ALIGNMENT);
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 		
-		add(cargar);
-		add(Box.createHorizontalStrut(espaciado));
+		add(guardar, CENTER_ALIGNMENT);
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 		
-		add(guardar);
-		add(Box.createHorizontalStrut(espaciado));
+		add(guardar_como, CENTER_ALIGNMENT);
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 		
-		add(guardar_como);
-		add(Box.createHorizontalStrut(espaciado));
+		add(cerrar, CENTER_ALIGNMENT);
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 		
-		add(cerrar);
-		add(Box.createHorizontalStrut(espaciado));
-		
-		add(limpiar);
-		add(Box.createHorizontalStrut(espaciado));
+		add(limpiar, CENTER_ALIGNMENT);
+		add(Box.createHorizontalStrut(espaciado), CENTER_ALIGNMENT);
 
 	}
 	

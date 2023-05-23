@@ -1,6 +1,7 @@
 package t11ej2;
 
 import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 
 import javax.swing.*;
 
@@ -24,9 +25,11 @@ public class GUI extends JFrame{
 		add(archivo, BorderLayout.CENTER);
 		
 		Botonera botonera = new Botonera();
-		botonera.setLayout(new BoxLayout(botonera, MAXIMIZED_HORIZ));
-		add(botonera, BorderLayout.SOUTH);
-		
+		JPanel contentBoton = new JPanel();
+		contentBoton.setLayout(new FlowLayout());
+
+		contentBoton.add(botonera);
+		add(contentBoton, BorderLayout.SOUTH);
 		
 		setSize(600, 550);
 		setLocation(550, 260);
