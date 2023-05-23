@@ -1,6 +1,5 @@
 package t11ej2;
 
-import java.awt.BorderLayout;
 import java.awt.GridBagLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
