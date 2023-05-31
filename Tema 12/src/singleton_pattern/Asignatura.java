@@ -32,12 +32,12 @@ public class Asignatura {
 	
 	static void Insertar15(Connection con, String nombre, int horas) throws SQLException {
 		
-		String sql = "Insert into Asignatura (Nombre, Horas)";
+		String sql = "Insert into asignaturas (Nombre, Horas)";
 		sql += " values(?, ?)";
 		PreparedStatement pstm = con.prepareStatement(sql);
 		
 		for(int i=1; i<16; i++) {
-			pstm.setString(1, (nombre + i++));
+			pstm.setString(1, (nombre));
 			pstm.setInt(2, horas);
 			
 			int resultado = pstm.executeUpdate();
@@ -54,7 +54,7 @@ public class Asignatura {
 	
 	
 	static void Select(Connection con) throws SQLException {
-		String sql = "Select Nombre, Horas FROM Asignaturas";
+		String sql = "Select Nombre, Horas FROM asignaturas";
 		PreparedStatement pstm = con.prepareStatement(sql);
 		
 		ResultSet rs = pstm.executeQuery();
@@ -66,11 +66,11 @@ public class Asignatura {
 	
 	static void Update(Connection con, int horas, String nombre) throws SQLException {
 		String sql = "UPDATE Asignaturas SET Horas=? ";
-		sql += "WHERE Nombre=?";
+		sql += "WHERE nombre=?";
 		PreparedStatement pstm = con.prepareStatement(sql);
 		
 		pstm.setInt(1, 8);
-		pstm.setString(2, sql);
+		pstm.setString(2, nombre);
 		
 		int resultado = pstm.executeUpdate();
 		

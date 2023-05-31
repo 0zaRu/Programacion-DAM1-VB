@@ -6,13 +6,13 @@ import java.util.ResourceBundle;
 
 public class UConnection {
 	
-	private static Connection con =  null;
+	private static Connection con = null;
 	
 	public static Connection getConnection() {
 		try {
 			if(con == null) {
-				Runtime.getRuntime().addShutdownHook(new MiShutdownHook());
-				
+				//Runtime.getRuntime().addShutdownHook(new MiShutdownHook());
+;
 				ResourceBundle rb	= ResourceBundle.getBundle("jdbc");
 				String driver		= rb.getString("driver");
 				String url 			= rb.getString("url");
