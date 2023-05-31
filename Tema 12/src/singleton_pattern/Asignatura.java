@@ -60,7 +60,7 @@ public class Asignatura {
 		ResultSet rs = pstm.executeQuery();
 		
 		while(rs.next())
-			System.out.println("Nombre: " + rs.getString(1) + ".\t\tHoras: " + rs.getInt("Horas"));
+			System.out.println("Nombre: " + rs.getString(1)+ ".\t\tHoras: " + rs.getInt("Horas"));
 	}
 	
 	
