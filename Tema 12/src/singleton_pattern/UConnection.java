@@ -11,7 +11,7 @@ public class UConnection {
 	public static Connection getConnection() {
 		try {
 			if(con == null) {
-				//Runtime.getRuntime().addShutdownHook(new MiShutdownHook());
+				Runtime.getRuntime().addShutdownHook(new MiShutdownHook());
 ;
 				ResourceBundle rb	= ResourceBundle.getBundle("jdbc");
 				String driver		= rb.getString("driver");
