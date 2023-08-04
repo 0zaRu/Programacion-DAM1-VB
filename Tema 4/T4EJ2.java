@@ -15,8 +15,6 @@ public class T4EJ2 {
         System.out.println("El area de la circunferencia es:\t"+ area(radio));
     }
 
-
-
     static double longuitud(float r){
         return 2*Math.PI*r;
     }

@@ -14,4 +14,3 @@ public class EJ1 {
 		System.out.println("\nLa suma de "+v1+" y "+v2+" es: "+ (v1+v2));
 	}
 }
-
